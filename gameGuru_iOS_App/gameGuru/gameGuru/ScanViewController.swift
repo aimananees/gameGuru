@@ -131,7 +131,7 @@ class ScanViewController: UIViewController,UIImagePickerControllerDelegate,UINav
                             "url": self.Url
                         ]
                         //POST Request
-                        let url = "https://284df71b.ngrok.io/sendURL/getGame"
+                        let url = "https://64799853.ngrok.io/sendURL/getGame"
                         Alamofire.request(url, method:.post, parameters:parameters,encoding: JSONEncoding.default).responseJSON { response in
                             switch response.result {
                             case .success:
@@ -149,7 +149,7 @@ class ScanViewController: UIViewController,UIImagePickerControllerDelegate,UINav
                             */
                             SVProgressHUD.dismiss()
                             let storyBoard : UIStoryboard = UIStoryboard(name: "Main", bundle:nil)
-                            let nextViewController = storyBoard.instantiateViewController(withIdentifier: "GameDetailsViewController") as! GameDetailsViewController
+                            let nextViewController = storyBoard.instantiateViewController(withIdentifier: "DetailsViewController") as! DetailsViewController
                             self.present(nextViewController, animated:true, completion:nil)
                             UIApplication.shared.endIgnoringInteractionEvents()
                         }
@@ -171,7 +171,7 @@ class ScanViewController: UIViewController,UIImagePickerControllerDelegate,UINav
     
     
     func getRequest(){
-            Alamofire.request("https://284df71b.ngrok.io/sendURL/getGame").responseJSON { response in
+            Alamofire.request("https://64799853.ngrok.io/sendURL/getGame").responseJSON { response in
                 print(response.result)
                 if let JSON = response.result.value as? AnyObject {
                     print(JSON)

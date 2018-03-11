@@ -10,6 +10,9 @@
 		180EBF56D6D66FB508CD1237 /* Pods_gameGuruTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B890B40408D048C1D12025C7 /* Pods_gameGuruTests.framework */; };
 		AD5E576478C8806A533BF57A /* Pods_gameGuru.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B8291EAAD18E352C5B1606CE /* Pods_gameGuru.framework */; };
 		CC46F6EC0F4F10A19A807375 /* Pods_gameGuruUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F74C746FD28C81C95144E7D /* Pods_gameGuruUITests.framework */; };
+		E17F735320540970005DF445 /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E17F735220540970005DF445 /* DetailsViewController.swift */; };
+		E17F735520552B8B005DF445 /* error.gif in Resources */ = {isa = PBXBuildFile; fileRef = E17F735420552B8A005DF445 /* error.gif */; };
+		E17F735720552CA8005DF445 /* ErrorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E17F735620552CA8005DF445 /* ErrorViewController.swift */; };
 		E1BC4D6320399F9400F7EE34 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1BC4D6220399F9400F7EE34 /* AppDelegate.swift */; };
 		E1BC4D6520399F9400F7EE34 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1BC4D6420399F9400F7EE34 /* ViewController.swift */; };
 		E1BC4D6820399F9400F7EE34 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E1BC4D6620399F9400F7EE34 /* Main.storyboard */; };
@@ -80,6 +83,9 @@
 		9184DEB591B8F74F3EA1092D /* Pods-gameGuruTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-gameGuruTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-gameGuruTests/Pods-gameGuruTests.debug.xcconfig"; sourceTree = "<group>"; };
 		B8291EAAD18E352C5B1606CE /* Pods_gameGuru.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_gameGuru.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B890B40408D048C1D12025C7 /* Pods_gameGuruTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_gameGuruTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E17F735220540970005DF445 /* DetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
+		E17F735420552B8A005DF445 /* error.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = error.gif; sourceTree = "<group>"; };
+		E17F735620552CA8005DF445 /* ErrorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorViewController.swift; sourceTree = "<group>"; };
 		E1BC4D5F20399F9400F7EE34 /* gameGuru.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = gameGuru.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E1BC4D6220399F9400F7EE34 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E1BC4D6420399F9400F7EE34 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -209,9 +215,11 @@
 			children = (
 				E1E35FB1204E683E0028103C /* IQKeyboardManagerSwift */,
 				E1E35F00204AFBEA0028103C /* Header.h */,
+				E17F735220540970005DF445 /* DetailsViewController.swift */,
 				E1BC4D6220399F9400F7EE34 /* AppDelegate.swift */,
 				E1BC4D6420399F9400F7EE34 /* ViewController.swift */,
 				E1BC4D6620399F9400F7EE34 /* Main.storyboard */,
+				E17F735620552CA8005DF445 /* ErrorViewController.swift */,
 				E1E35F32204D88510028103C /* ImagesCollectionViewCell.swift */,
 				E1E35EF2204ACF740028103C /* AccountViewController.swift */,
 				E1E35EE820484C1F0028103C /* ScanViewController.swift */,
@@ -224,6 +232,7 @@
 				E1E35EE420481AD00028103C /* LoginViewController.swift */,
 				E1E35EDE2047FC670028103C /* File.swift */,
 				E1E35EE02047FC810028103C /* source.gif */,
+				E17F735420552B8A005DF445 /* error.gif */,
 				E1E35EE22048195E0028103C /* original.gif */,
 				E1E35F30204D38150028103C /* gameBackground.gif */,
 				E1BC4D6C20399F9400F7EE34 /* Assets.xcassets */,
@@ -439,6 +448,7 @@
 				E1E35F31204D38150028103C /* gameBackground.gif in Resources */,
 				E1E35EE32048195F0028103C /* original.gif in Resources */,
 				E1BC4D7020399F9400F7EE34 /* LaunchScreen.storyboard in Resources */,
+				E17F735520552B8B005DF445 /* error.gif in Resources */,
 				E1BC4D6D20399F9400F7EE34 /* Assets.xcassets in Resources */,
 				E1E35EFB204AE73F0028103C /* robot.gif in Resources */,
 				E1BC4D6820399F9400F7EE34 /* Main.storyboard in Resources */,
@@ -613,6 +623,7 @@
 			files = (
 				E1BC4D6520399F9400F7EE34 /* ViewController.swift in Sources */,
 				E1E35F2F204D31060028103C /* GameDetailsViewController.swift in Sources */,
+				E17F735320540970005DF445 /* DetailsViewController.swift in Sources */,
 				E1E35FCC204E683E0028103C /* IQBarButtonItem.swift in Sources */,
 				E1E35FD8204E683E0028103C /* IQUIView+Hierarchy.swift in Sources */,
 				E1E35FD9204E683E0028103C /* IQNSArray+Sort.swift in Sources */,
@@ -631,6 +642,7 @@
 				E1E35FCA204E683E0028103C /* IQPreviousNextView.swift in Sources */,
 				E1E35FC9204E683E0028103C /* IQTextView.swift in Sources */,
 				E1E35F33204D88510028103C /* ImagesCollectionViewCell.swift in Sources */,
+				E17F735720552CA8005DF445 /* ErrorViewController.swift in Sources */,
 				E1E35FD6204E683E0028103C /* IQUIViewController+Additions.swift in Sources */,
 				E1E35FCE204E683E0028103C /* IQUIView+IQKeyboardToolbar.swift in Sources */,
 				E1E35FD3204E683E0028103C /* IQKeyboardManager.swift in Sources */,
